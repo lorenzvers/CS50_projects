@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Over the Top</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  </head>
+  <body class="bg-dark">
+    <!-- START NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark position-absolute w-100 bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Over the Top</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item  p-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown p-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Activities </a>
+              <div class="dropdown-menu dropdown-menu-end bg-dark border-0" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-light" href="rock-climbing.html">Rock climbing</a>
+                <a class="dropdown-item text-light" href="ski-mountaineering.html">Ski Mountaineering</a>
+                <a class="dropdown-item text-light" href="trail-running.html">Trail running</a>
+              </div>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="contacts.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAV -->
+    <!-- START HERO -->
+    <div id="jumbotron-contacts" class="jumbotron rounded-0 mb-0">
+      <h1 class="mt-5 mt-sm-0">CONTACTS</h1>
+      <p class="lead">DROP US A TEXT TO KNOW MORE ABOUT WHAT WE DO</p>
+      <p class="lead mb-0">
+        <a class="btn bg-white rounded-0 btn-lg" href="#contact-form" role="button">Get in touch</a>
+      </p>
+    </div>
+    <!-- END HERO -->
+    <!-- START CONTACTS -->
+    <div class="container mt-5 pb-5">
+      <h1 class="text-light text-center">Get in touch!</h1>
+      <form id="contact-form" class="row g-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+        <div class="col-md-8">
+          <label for="emailInfo" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailInfo" required>
+        </div>
+        <div class="col-md-4">
+          <label for="phoneNumber" class="form-label">Phone number</label>
+          <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (123) 456-7890">
+        </div>
+        <div class="col-md-12">
+          <label for="comments" class="form-label">Ask us anything!</label>
+          <textarea class="form-control" id="comments" rows="5" required></textarea>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-light btn-lg mt-3">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- END CONTACTS -->
+    <!-- START FOOTER -->
+    <div class="container-fluid text-center text-light bg-dark py-2">
+      <footer>
+        <h5>Follow us</h5>
+        <a class="btn btn-floating btn-lg mx-1" href="#">
+          <i class="bi bi-facebook text-light"></i>
+        </a>
+        <a class="btn btn-floating btn-lg mx-1" href="#">
+          <i class="bi bi-instagram text-light"></i>
+        </a>
+        <a class="btn btn-floating btn-lg mx-1" href="#">
+          <i class="bi bi-youtube text-light"></i>
+        </a>
+        <a class="btn btn-floating btn-lg mx-1" href="#">
+          <i class="bi bi-twitter text-light"></i>
+        </a>
+        <hr class="hr mt-3 bg-white">
+        <p>Made for CS50x with love and coffee</p>
+      </footer>
+    </div>
+    <!-- END FOOTER -->
+    <!-- JS SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="nav.js"></script>
+  </body>
+</html>

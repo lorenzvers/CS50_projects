@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* NAVBAR */
+
+@media screen and (min-width: 768px) {
+  .nav-link[aria-current="page"] {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    color: black !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-link[aria-current="page"] {
+    font-weight: bold;
+    color: white !important;
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+
+  .navbar-collapse.show {
+    background-color: #343a40;
+    color: white;
+    width: auto;
+  }
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+#jumbotron-home {
+  background-image: url(https://images.pexels.com/photos/5653748/pexels-photo-5653748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#jumbotron-ski {
+  background-image: url(https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#jumbotron-rock {
+  background-image: url(https://images.pexels.com/photos/449609/pexels-photo-449609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+#jumbotron-trail {
+  background-image: url(https://images.unsplash.com/photo-1610066370580-f698d2ccfb69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2045&q=80);
+}
+
+#jumbotron-contacts {
+  background-image: url(https://images.pexels.com/photos/11256449/pexels-photo-11256449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+/* CARDS */
+
+.container {
+  max-width: 960px;
+}
+
+.card {
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(255, 255, 255, 0.1);
+}
+
+/* FORM */
+
+.form-label {
+  color: white;
+  margin-top: 1.5rem;
+}
